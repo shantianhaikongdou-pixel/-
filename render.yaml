@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: efb-pro
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python ディスコード.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.10
